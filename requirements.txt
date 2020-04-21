@@ -11,6 +11,9 @@ pyproj
 nine
 future
 lisflood-utilities
+matplotlib
+deap
+dask
 
 pytest
 pytest-mock
