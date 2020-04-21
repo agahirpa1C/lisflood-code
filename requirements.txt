@@ -10,10 +10,10 @@ xarray
 pyproj
 nine
 future
-lisflood-utilities
-matplotlib
 deap
+matplotlib
 dask
+lisflood-utilities
 
 pytest
 pytest-mock
