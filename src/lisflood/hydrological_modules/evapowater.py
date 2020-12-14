@@ -66,6 +66,7 @@ class evapowater(HydroModule):
             self.var.downEva = (compressArray(downstream(LddEva, inAr))).astype("int32")
             # each upstream pixel gets the id of the downstream pixel
             self.var.downEva[lddC == 5] = maskinfo.info.mapC[0]
+            self.var.downEva[self.var.downEva < 0] = maskinfo.info.mapC[0]
             self.var.maxNoEva = int(loadmap('maxNoEva'))
             # all pits gets a high number
             # still to test if this works
